@@ -72,13 +72,22 @@ img {
 
 .text-container {
   display: flex;
-  height: 1.1rem;
+  height: 2.4rem;
   margin-left: 0.63rem;
   overflow: hidden;
 }
 
 .text {
   transition: all 0.3s linear;
+  height: 2.4rem;
+  margin-right: 0.8rem;
+}
+
+.text p {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  height: 2.4rem;
 }
 
 .first:checked~.bottom-container>.text-container>.text {
@@ -155,7 +164,7 @@ input {
 
   .text-container {
     display: flex;
-    height: 1.1rem;
+    height: 2.4rem;
     margin-left: 0.63rem;
     overflow: hidden;
   }
