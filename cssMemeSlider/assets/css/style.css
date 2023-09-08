@@ -140,3 +140,28 @@ input {
 #fourth:checked~.bottom-container>.controls label:nth-of-type(4):hover {
   border: 0.2rem solid #afafaf;
 }
+
+@media (max-width: 31.25rem) {
+  .wrapper {
+    padding: 1.5rem;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+  }
+
+  .text-container {
+    display: flex;
+    height: 1.1rem;
+    margin-left: 0.63rem;
+    overflow: hidden;
+  }
+
+  .controls {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
