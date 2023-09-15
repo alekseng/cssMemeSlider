@@ -126,45 +126,69 @@ input {
 }
 
 .choose__label {
-  width: 0.7rem;
-  height: 0.7rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  padding: 0.3rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.choose__label>div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
   cursor: pointer;
   background: #2e77b7;
   border-radius: 50%;
-  border: 0.2rem solid #2e77b7;
-  margin-right: 0.8rem;
+  border: 0.15rem solid #2e77b7;
   transition: all 0.1s linear;
 }
 
-.choose__label:hover {
+.choose__label:hover>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  background: #afafaf;
+  background: #aaaaaa;
   border-radius: 50%;
-  border: 0.2rem solid #afafaf;
+  border: 0.15rem solid #aaaaaa;
+  transition: all 0.1s linear;
 }
 
-#first:checked~.bottom-container>.controls label:nth-of-type(1),
-#second:checked~.bottom-container>.controls label:nth-of-type(2),
-#third:checked~.bottom-container>.controls label:nth-of-type(3),
-#fourth:checked~.bottom-container>.controls label:nth-of-type(4),
-#fifth:checked~.bottom-container>.controls label:nth-of-type(5) {
+#first:checked~.bottom-container>.controls label:nth-of-type(1)>div,
+#second:checked~.bottom-container>.controls label:nth-of-type(2)>div,
+#third:checked~.bottom-container>.controls label:nth-of-type(3)>div,
+#fourth:checked~.bottom-container>.controls label:nth-of-type(4)>div,
+#fifth:checked~.bottom-container>.controls label:nth-of-type(5)>div {
   cursor: pointer;
   background: transparent;
   border-radius: 50%;
-  border: 0.2rem solid transparent;
-  border: 0.2rem solid #2e77b7;
+  border: 0.15rem solid transparent;
+  border: 0.15rem solid #2e77b7;
 }
 
-#first:checked~.bottom-container>.controls label:nth-of-type(1):hover,
-#second:checked~.bottom-container>.controls label:nth-of-type(2):hover,
-#third:checked~.bottom-container>.controls label:nth-of-type(3):hover,
-#fourth:checked~.bottom-container>.controls label:nth-of-type(4):hover,
-#fifth:checked~.bottom-container>.controls label:nth-of-type(5):hover {
-  border: 0.2rem solid #afafaf;
+#first:checked~.bottom-container>.controls label:nth-of-type(1)>div:hover,
+#second:checked~.bottom-container>.controls label:nth-of-type(2)>div:hover,
+#third:checked~.bottom-container>.controls label:nth-of-type(3)>div:hover,
+#fourth:checked~.bottom-container>.controls label:nth-of-type(4)>div:hover,
+#fifth:checked~.bottom-container>.controls label:nth-of-type(5)>div:hover {
+  border: 0.15rem solid #aaaaaa;
 }
 
-label:nth-of-type(5) {
-  margin-right: 0;
+#first:checked~.bottom-container>.controls label:active>div,
+#second:checked~.bottom-container>.controls label:active>div,
+#third:checked~.bottom-container>.controls label:active>div,
+#fourth:checked~.bottom-container>.controls label:active>div,
+#fifth:checked~.bottom-container>.controls label:active>div {
+  border: 0.15rem solid #6e6e6e;
+  background: #6e6e6e;
 }
 
 @media (max-width: 31.25rem) {
