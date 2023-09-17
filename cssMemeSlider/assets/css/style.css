@@ -184,11 +184,11 @@ input {
   border: 0.15rem solid rgb(50 134 211);
 }
 
-#first:checked~.bottom-container>.controls label:nth-of-type(1)>div:hover,
-#second:checked~.bottom-container>.controls label:nth-of-type(2)>div:hover,
-#third:checked~.bottom-container>.controls label:nth-of-type(3)>div:hover,
-#fourth:checked~.bottom-container>.controls label:nth-of-type(4)>div:hover,
-#fifth:checked~.bottom-container>.controls label:nth-of-type(5)>div:hover {
+#first:checked~.bottom-container>.controls label:nth-of-type(1):hover>div,
+#second:checked~.bottom-container>.controls label:nth-of-type(2):hover>div,
+#third:checked~.bottom-container>.controls label:nth-of-type(3):hover>div,
+#fourth:checked~.bottom-container>.controls label:nth-of-type(4):hover>div,
+#fifth:checked~.bottom-container>.controls label:nth-of-type(5):hover>div {
   border: 0.15rem solid #aaaaaa;
 }
 
